@@ -261,3 +261,7 @@ no info yet
 ## Util_links
 
 The next links helped me a lot to finish this task.
+
+- *Spring Boot, Spring Data JPA – Rest CRUD API example:* https://www.bezkoder.com/spring-boot-jpa-crud-rest-api/
+
+- *Spring Boot JPA + H2 example: Build a CRUD Rest APIs:* https://www.bezkoder.com/spring-boot-jpa-h2-example/
