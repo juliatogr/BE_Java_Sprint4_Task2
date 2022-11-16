@@ -26,11 +26,7 @@ public class FruitaService {
     public Optional<Fruita> getFruitaById(int id){
         return fruitaRepository.findById(id);
     }
-
-    public List<Fruita> getFruitaByNom(String nom) {
-        return fruitaRepository.findByNomContaining(nom);
-    }
-
+    
     public boolean deleteFruita(int id) {
         try{
         	fruitaRepository.deleteById(id);

@@ -9,6 +9,5 @@ import cat.itacademy.barcelonactiva.tortosagrau.julia.s04.t02.n01.model.domain.F
 
 @Repository
 public interface FruitaRepository extends JpaRepository<Fruita, Integer> {
-	  public abstract List<Fruita> findByNomContaining(String nom);
-	  public abstract List<Fruita> findByQuantitatQuilos(Integer quantitatQuilos);
+	 
 }
