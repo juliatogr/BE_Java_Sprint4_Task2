@@ -1,4 +1,4 @@
-package cat.itacademy.barcelonactiva.tortosagrau.julia.s04.t02.n01;
+package cat.itacademy.barcelonactiva.tortosagrau.julia.s04.t02.n01.model.domain;
 
 import javax.persistence.*;
 
@@ -6,17 +6,25 @@ import javax.persistence.*;
 @Table(name = "fruites")
 public class Fruita {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(unique = true, nullable = false)
 	private int id;
+	
 	@Column(name = "nom")
 	private String nom;
-	@Column(name = "quantitatQuilos")
+	
+	@Column(name = "quantitat_quilos")
 	private int quantitatQuilos;
+	
+	public Fruita() {
+		this.nom = "";
+		this.quantitatQuilos = 0;
+	}
 	
 	public Fruita(String nom, int quantitatQuilos) {
 		this.nom = nom;
 		this.quantitatQuilos = quantitatQuilos;
-	}
+	}	
 	
 	public int getId() {
 		return id;

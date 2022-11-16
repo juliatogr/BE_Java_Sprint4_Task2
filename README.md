@@ -265,3 +265,9 @@ The next links helped me a lot to finish this task.
 - *Spring Boot, Spring Data JPA – Rest CRUD API example:* https://www.bezkoder.com/spring-boot-jpa-crud-rest-api/
 
 - *Spring Boot JPA + H2 example: Build a CRUD Rest APIs:* https://www.bezkoder.com/spring-boot-jpa-h2-example/
+
+- *Desarrollar Api Rest con Java Spring Boot, explicación completa en 20 min:* https://www.youtube.com/watch?v=vTu2HQrXtyw
+
+- *Spring Tools 4: Getting Started in Eclipse* https://www.youtube.com/watch?v=mST9AG4Yn_A
+
+- *Getting started with Spring Data JPA:* https://spring.io/blog/2011/02/10/getting-started-with-spring-data-jpa
