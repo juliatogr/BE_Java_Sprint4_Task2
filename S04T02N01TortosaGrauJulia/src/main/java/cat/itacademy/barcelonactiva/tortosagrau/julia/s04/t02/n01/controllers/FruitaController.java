@@ -41,7 +41,7 @@ public class FruitaController {
 	}
 
 	@GetMapping("/getOne/{id}")
-	public ResponseEntity<Fruita> getFruitaById(@PathVariable(name = "id", required = false) int id) {
+	public ResponseEntity<Fruita> getFruitaById(@PathVariable(name = "id") int id) {
 	Optional<Fruita> fruitaData = fruitaRepository.findById(id);
 	
 		if (fruitaData.isPresent()) {
@@ -62,12 +62,12 @@ public class FruitaController {
 		}
   }
 
-	@PutMapping("/update/{id}")
-	public ResponseEntity<Fruita> updateFruita(@PathVariable("id") int id, @RequestBody Fruita fruita) {
-		Optional<Fruita> fruitaData = fruitaRepository.findById(id);
+	@PutMapping("/update")
+	public ResponseEntity<Fruita> updateFruita(@RequestBody Fruita fruita) {
+		Fruita fruitaData = fruitaRepository.findFruitaByNom(fruita.getNom());
 
-		if (fruitaData.isPresent()) {
-			Fruita _fruita = fruitaData.get();
+		if (fruitaData != null) {
+			Fruita _fruita = fruitaData;
 			_fruita.setNom(fruita.getNom());
 			_fruita.setQuantitatQuilos(fruita.getQuantitatQuilos());
 			return new ResponseEntity<>(fruitaRepository.save(_fruita), HttpStatus.OK);

@@ -14,7 +14,6 @@ Aprendràs a usar correctament els verbs HTTP i a gestionar els codis de respost
 
 ## Nivell 1 - Exercici CRUD amb H2
 
-### Statement
 Accedeix a la pàgina ->https://start.spring.io/, i genera un projecte Spring boot amb les següents característiques:
 
 
@@ -71,10 +70,6 @@ Hauràs de tenir en compte les bones pràctiques de disseny de les API, fent ser
 **Molt Important**
 
 A més de l’enllaç a Git de la tasca resolta, hauràs d’incloure almenys dos enllaços diferents dels recursos que t’hem proporcionat al campus, que t’hagin servit o ho haguessin pogut fer, per resoldre la totalitat de la tasca o algunes parts.
-
-### info
-
-The update link is http://localhost:8080/fruita/update/{id} to update an specific fruit. The rest of links are OK. Tested with H2 and PostMan
 
 ## Nivell 2 - Spring i Gradle (Not done)
 

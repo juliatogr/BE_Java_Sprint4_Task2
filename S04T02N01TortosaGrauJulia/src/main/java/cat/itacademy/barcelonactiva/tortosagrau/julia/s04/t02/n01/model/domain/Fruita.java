@@ -10,15 +10,13 @@ public class Fruita {
 	@Column(unique = true, nullable = false)
 	private int id;
 	
-	@Column(name = "nom")
+	@Column(name = "nom", unique = true, nullable = false)
 	private String nom;
 	
-	@Column(name = "quantitat_quilos")
+	@Column(name = "quantitat_quilos", unique = true, nullable = false)
 	private int quantitatQuilos;
 	
 	public Fruita() {
-		this.nom = "";
-		this.quantitatQuilos = 0;
 	}
 	
 	public Fruita(String nom, int quantitatQuilos) {
