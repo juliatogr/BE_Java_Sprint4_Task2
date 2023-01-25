@@ -13,7 +13,7 @@ public class Fruita {
 	@Column(name = "nom", unique = true, nullable = false)
 	private String nom;
 	
-	@Column(name = "quantitat_quilos", unique = true, nullable = false)
+	@Column(name = "quantitatQuilos", unique = false, nullable = false)
 	private int quantitatQuilos;
 	
 	public Fruita() {
